@@ -785,22 +785,35 @@ button {
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2.2rem, 5vw, 4rem);
   font-weight: 800;
-  line-height: 1.12;
+  line-height: 1.15;
   letter-spacing: -0.035em;
   margin-bottom: 1.25rem;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 .hero-tagline {
-  font-size: 1.4rem;
+  font-size: clamp(1.05rem, 3.5vw, 1.35rem);
   font-weight: 700;
   color: var(--accent-cyan);
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.4rem;
   font-family: var(--font-mono);
+  max-width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+#typed-tagline {
+  display: inline;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 .hero-description {

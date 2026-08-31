@@ -271,10 +271,10 @@ const HeroTypingManager = {
   el: document.getElementById('typed-tagline'),
   phrases: [
     'Learn. Build. Connect. Grow.',
-    'Build Modern Full-Stack Web Apps.',
-    'Master Python, AI & Data Science.',
-    'Conquer National Hackathons.',
-    'Launch Your Dream Tech Career.'
+    'Full-Stack Web & Apps.',
+    'Python, AI & Data Science.',
+    'National Hackathons.',
+    'Launch Your Tech Career.'
   ],
   phraseIndex: 0,
   charIndex: 0,
