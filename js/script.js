@@ -121,10 +121,14 @@ const NavigationManager = {
 
     // Mobile Hamburger Drawer Toggle
     if (this.menuToggle && this.mobileDrawer) {
+      const barsIcon = document.getElementById('menu-bars-icon');
       this.menuToggle.addEventListener('click', () => {
-        this.menuToggle.classList.toggle('open');
-        this.mobileDrawer.classList.toggle('open');
-        document.body.style.overflow = this.mobileDrawer.classList.contains('open') ? 'hidden' : '';
+        const isOpen = this.mobileDrawer.classList.toggle('open');
+        this.menuToggle.classList.toggle('open', isOpen);
+        if (barsIcon) {
+          barsIcon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+        }
+        document.body.style.overflow = isOpen ? 'hidden' : '';
       });
 
       // Close drawer on link click
@@ -132,6 +136,9 @@ const NavigationManager = {
         link.addEventListener('click', () => {
           this.menuToggle.classList.remove('open');
           this.mobileDrawer.classList.remove('open');
+          if (barsIcon) {
+            barsIcon.className = 'fa-solid fa-bars';
+          }
           document.body.style.overflow = '';
         });
       });

@@ -40,7 +40,7 @@
       </a>
 
       <!-- Desktop Navigation Menu with Grouped Hover Dropdowns -->
-      <nav aria-label="Main Navigation">
+      <nav class="desktop-nav" aria-label="Main Navigation">
         <ul class="nav-menu" id="nav-menu">
           <li><a href="#home" class="nav-link active">Home</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
@@ -165,7 +165,7 @@
 
         <!-- Bookmarks Drawer Button -->
         <button class="icon-btn" id="bookmarks-trigger" title="Saved Bookmarks" aria-label="Bookmarks">
-          <i class="fa-regular fa-bookmark"></i>
+          <i class="fa-solid fa-bookmark"></i>
           <span class="icon-badge" id="bookmark-count-badge">0</span>
         </button>
 
@@ -174,17 +174,15 @@
           <i class="fa-solid fa-moon" id="theme-icon"></i>
         </button>
 
-        <!-- CTA Button -->
-        <button class="btn btn-primary btn-sm" id="join-club-cta-btn">
+        <!-- CTA Button (Desktop Only) -->
+        <button class="btn btn-primary btn-sm desktop-only-cta" id="join-club-cta-btn">
           <i class="fa-solid fa-user-plus"></i>
           <span>Join ICT Club</span>
         </button>
 
-        <!-- Mobile Menu Toggle -->
-        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
-          <span></span>
-          <span></span>
-          <span></span>
+        <!-- Mobile Menu Toggle Button with FontAwesome Icon -->
+        <button class="icon-btn menu-toggle-btn" id="menu-toggle" aria-label="Toggle Navigation Menu" title="Open Menu">
+          <i class="fa-solid fa-bars" id="menu-bars-icon"></i>
         </button>
       </div>
     </div>
