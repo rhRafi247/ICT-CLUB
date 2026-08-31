@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPI ICT Club | Learn. Build. Connect. Grow.</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="CPI ICT Club is the premier student technology & learning community. Explore free programming resources, full-stack courses, study notes, events, hackathons, and career opportunities.">
+  <meta name="keywords" content="CPI ICT Club, Polytechnic ICT Club, Programming, Web Development, Python, JavaScript, Cybersecurity, Computer Networking, Study Notes, Hackathon">
+  <meta name="author" content="CPI ICT Club Technical Team">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="CPI ICT Club | Learn. Build. Connect. Grow.">
+  <meta property="og:description" content="Premier student technology and learning community. Access free resources, courses, roadmaps, events, and project mentorship.">
+  <meta property="og:type" content="website">
+  
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================== -->
+  <header class="header" id="header">
+    <div class="container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" id="brand-logo">
+        <div class="logo-icon-wrapper">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">CPI ICT CLUB</span>
+          <span class="brand-sub">Tech Community</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu with Grouped Hover Dropdowns -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          
+          <!-- Dropdown 1: Learning Hub -->
+          <li class="nav-item-dropdown">
+            <a href="#resources" class="nav-link dropdown-toggle" aria-haspopup="true">
+              <span>Learning Hub</span>
+              <i class="fa-solid fa-chevron-down nav-dropdown-icon"></i>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="#resources" class="dropdown-item">
+                <div class="dropdown-item-icon"><i class="fa-solid fa-book-open"></i></div>
+                <div class="dropdown-item-text">
+                  <strong>Learning Resources</strong>
+                  <span>12+ tracks with tutorials & docs</span>
+                </div>
+              </a>
+              <a href="#courses" class="dropdown-item">
+                <div class="dropdown-item-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="dropdown-item-text">
+                  <strong>Courses & Bootcamps</strong>
+                  <span>Guided video curriculums</span>
+                </div>
+              </a>
+              <a href="#notes" class="dropdown-item">
+                <div class="dropdown-item-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                <div class="dropdown-item-text">
+                  <strong>Study Notes & PDFs</strong>
+                  <span>Exam cheat sheets & manuals</span>
+                </div>
+              </a>
+              <a href="#coding" class="dropdown-item">
+                <div class="dropdown-item-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <div class="dropdown-item-text">
+                  <strong>Coding & Challenges</strong>
+                  <span>Problem solving & cheatsheets</span>
+                </div>
+              </a>
+              <a href="#roadmaps" class="dropdown-item">
+                <div class="dropdown-item-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                <div class="dropdown-item-text">
+                  <strong>Learning Roadmaps</strong>
+                  <span>Interactive career pathways</span>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!-- Dropdown 2: Opportunities & Events -->
+          <li class="nav-item-dropdown">
+            <a href="#events" class="nav-link dropdown-toggle" aria-haspopup="true">
+              <span>Opportunities</span>
+              <i class="fa-solid fa-chevron-down nav-dropdown-icon"></i>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="#events" class="dropdown-item">
+                <div class="dropdown-item-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                <div class="dropdown-item-text">
+                  <strong>Events & Hackathons</strong>
+                  <span>Workshops, contests & meetups</span>
+                </div>
+              </a>
+              <a href="#career" class="dropdown-item">
+                <div class="dropdown-item-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <div class="dropdown-item-text">
+                  <strong>Career & Internships</strong>
+                  <span>Tech jobs, grants & guide</span>
+                </div>
+              </a>
+              <a href="#projects" class="dropdown-item">
+                <div class="dropdown-item-icon"><i class="fa-solid fa-rocket"></i></div>
+                <div class="dropdown-item-text">
+                  <strong>Project Showcase</strong>
+                  <span>Student innovations & demos</span>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <!-- Dropdown 3: Community & Insights -->
+          <li class="nav-item-dropdown">
+            <a href="#team" class="nav-link dropdown-toggle" aria-haspopup="true">
+              <span>Community</span>
+              <i class="fa-solid fa-chevron-down nav-dropdown-icon"></i>
+            </a>
+            <div class="nav-dropdown-menu">
+              <a href="#team" class="dropdown-item">
+                <div class="dropdown-item-icon"><i class="fa-solid fa-users-viewfinder"></i></div>
+                <div class="dropdown-item-text">
+                  <strong>Leadership & Team</strong>
+                  <span>Executive leads & mentors</span>
+                </div>
+              </a>
+              <a href="#gallery" class="dropdown-item">
+                <div class="dropdown-item-icon"><i class="fa-solid fa-images"></i></div>
+                <div class="dropdown-item-text">
+                  <strong>Photo Gallery</strong>
+                  <span>Event memories & moments</span>
+                </div>
+              </a>
+              <a href="#faq" class="dropdown-item">
+                <div class="dropdown-item-icon"><i class="fa-solid fa-circle-question"></i></div>
+                <div class="dropdown-item-text">
+                  <strong>Club FAQs</strong>
+                  <span>Common queries & answers</span>
+                </div>
+              </a>
+            </div>
+          </li>
+
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <!-- Quick Global Search Button -->
+        <button class="icon-btn" id="search-modal-trigger" title="Search Everything (Ctrl+K)" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <!-- Bookmarks Drawer Button -->
+        <button class="icon-btn" id="bookmarks-trigger" title="Saved Bookmarks" aria-label="Bookmarks">
+          <i class="fa-regular fa-bookmark"></i>
+          <span class="icon-badge" id="bookmark-count-badge">0</span>
+        </button>
+
+        <!-- Dark / Light Theme Toggle -->
+        <button class="icon-btn" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <!-- CTA Button -->
+        <button class="btn btn-primary btn-sm" id="join-club-cta-btn">
+          <i class="fa-solid fa-user-plus"></i>
+          <span>Join ICT Club</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div style="font-size: 0.75rem; font-weight: 700; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.5rem;">Navigation</div>
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="nav-link">Home <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#about" class="nav-link">About Club <i class="fa-solid fa-chevron-right"></i></a></li>
+      
+      <li style="margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px solid var(--border-color); font-size: 0.75rem; font-weight: 700; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.08em;">Learning Hub</li>
+      <li><a href="#resources" class="nav-link">Learning Resources <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#courses" class="nav-link">Courses & Bootcamps <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#notes" class="nav-link">Study Notes & PDFs <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#coding" class="nav-link">Coding & Challenges <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#roadmaps" class="nav-link">Learning Roadmaps <i class="fa-solid fa-chevron-right"></i></a></li>
+      
+      <li style="margin-top: 0.5rem; padding-top: 0.5rem; border-top: 1px solid var(--border-color); font-size: 0.75rem; font-weight: 700; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.08em;">Opportunities & Community</li>
+      <li><a href="#events" class="nav-link">Events & Hackathons <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#career" class="nav-link">Career & Internships <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#projects" class="nav-link">Projects Showcase <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#team" class="nav-link">Leadership & Team <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#gallery" class="nav-link">Photo Gallery <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#faq" class="nav-link">FAQs <i class="fa-solid fa-chevron-right"></i></a></li>
+      <li><a href="#contact" class="nav-link">Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+    </ul>
+    <div style="margin-top: auto;">
+      <button class="btn btn-primary" id="mobile-join-btn" style="width: 100%;">
+        <i class="fa-solid fa-rocket"></i> Join CPI ICT Club
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         1. HERO SECTION
+         ========================================================================== -->
+    <section class="hero-section" id="home">
+      <!-- Interactive Particle Canvas -->
+      <canvas id="hero-canvas"></canvas>
+      <div class="hero-glow-bg"></div>
+
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Content -->
+          <div class="hero-content fade-in-up">
+            <div class="hero-badge">
+              <span class="ping-dot"></span>
+              <span>Next-Gen Polytechnic Tech Guild</span>
+            </div>
+            
+            <h1 class="hero-title">
+              Empowering Student Innovators at <span class="gradient-text">CPI ICT Club</span>
+            </h1>
+
+            <div class="hero-tagline">
+              <i class="fa-solid fa-terminal"></i>
+              <span id="typed-tagline">Learn. Build. Connect. Grow.</span>
+            </div>
+
+            <p class="hero-description">
+              Welcome to the central technology hub of CPI. We equip students with practical programming skills, real-world software project experience, competitive coding mentorship, career guidance, and hackathon opportunities.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#resources" class="btn btn-primary btn-lg" id="hero-explore-btn">
+                <i class="fa-solid fa-compass"></i>
+                <span>Explore Resources</span>
+              </a>
+              <button class="btn btn-secondary btn-lg" id="hero-community-btn">
+                <i class="fa-solid fa-users"></i>
+                <span>Join Our Community</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Interactive Visual Card -->
+          <div class="hero-visual-card fade-in-up" style="animation-delay: 0.2s;">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot-red"></span>
+                <span class="dot-yellow"></span>
+                <span class="dot-green"></span>
+              </div>
+              <span class="terminal-title">~/cpi-ict-club/community.js</span>
+              <span class="badge badge-cyan"><i class="fa-solid fa-bolt"></i> Live</span>
+            </div>
+
+            <div class="code-preview">
+              <p><span class="code-keyword">const</span> <span class="code-prop">cpiClub</span> = <span class="code-keyword">new</span> <span class="code-func">TechGuild</span>({</p>
+              <p>&nbsp;&nbsp;name: <span class="code-str">"CPI ICT Club"</span>,</p>
+              <p>&nbsp;&nbsp;motto: <span class="code-str">"Learn. Build. Connect. Grow."</span>,</p>
+              <p>&nbsp;&nbsp;tracks: [<span class="code-str">"Web"</span>, <span class="code-str">"Python"</span>, <span class="code-str">"AI"</span>, <span class="code-str">"Security"</span>],</p>
+              <p>&nbsp;&nbsp;mission: <span class="code-func">() =></span> <span class="code-str">"Engineer Future Tech Leaders"</span></p>
+              <p>});</p>
+              <p><span class="code-keyword">await</span> cpiClub.<span class="code-func">empowerStudents</span>();</p>
+            </div>
+
+            <div class="floating-badge badge-top-right">
+              <i class="fa-solid fa-trophy" style="color: var(--accent-amber);"></i>
+              <div>
+                <strong style="font-size: 0.85rem; display: block;">National Champion</strong>
+                <span style="font-size: 0.72rem; color: var(--text-muted);">Hackathon 2024</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <i class="fa-solid fa-shield-halved" style="color: var(--accent-emerald);"></i>
+              <div>
+                <strong style="font-size: 0.85rem; display: block;">100% Open Access</strong>
+                <span style="font-size: 0.72rem; color: var(--text-muted);">Free for all students</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         2. CLUB STATISTICS / ACHIEVEMENTS BANNER
+         ========================================================================== -->
+    <section class="stats-banner" id="stats">
+      <div class="container">
+        <div class="stats-grid fade-in-up">
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+            <div class="stat-info">
+              <span class="stat-number counter" data-target="1850">0</span>
+              <span class="stat-label">Active Members</span>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+            <div class="stat-info">
+              <span class="stat-number counter" data-target="420">0</span>
+              <span class="stat-label">Learning Resources</span>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fa-solid fa-calendar-check"></i></div>
+            <div class="stat-info">
+              <span class="stat-number counter" data-target="56">0</span>
+              <span class="stat-label">Events & Workshops</span>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="stat-info">
+              <span class="stat-number counter" data-target="145">0</span>
+              <span class="stat-label">Student Projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. ABOUT ICT CLUB SECTION
+         ========================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left Text & Mission/Vision -->
+          <div class="about-text fade-in-up">
+            <span class="section-tag"><i class="fa-solid fa-circle-info"></i> About Our Guild</span>
+            <h2 class="section-title">Nurturing Tomorrow's <span class="gradient-text">Software Engineers</span> & Innovators</h2>
+            <p class="section-description">
+              The CPI ICT Club was established with a singular vision: to empower diploma engineering students with modern industry-grade technology skills, competitive coding instincts, and collaborative open-source mindsets.
+            </p>
+
+            <div class="about-features">
+              <div class="about-feature-card">
+                <i class="fa-solid fa-graduation-cap feature-icon"></i>
+                <h3 class="feature-title">Industry-Aligned Skills</h3>
+                <p class="feature-desc">Hands-on practice with modern stacks: Full Stack Web, Python, Cloud, UI/UX, and Cybersecurity.</p>
+              </div>
+
+              <div class="about-feature-card">
+                <i class="fa-solid fa-people-roof feature-icon"></i>
+                <h3 class="feature-title">Peer Mentorship</h3>
+                <p class="feature-desc">Senior club members mentor junior batches in programming, debugging, and project building.</p>
+              </div>
+
+              <div class="about-feature-card">
+                <i class="fa-solid fa-trophy feature-icon"></i>
+                <h3 class="feature-title">Hackathons & Contests</h3>
+                <p class="feature-desc">Regular intra-college and national competitive programming contests with exciting prizes.</p>
+              </div>
+
+              <div class="about-feature-card">
+                <i class="fa-solid fa-briefcase feature-icon"></i>
+                <h3 class="feature-title">Career Acceleration</h3>
+                <p class="feature-desc">Direct job and internship placements, resume reviews, and portfolio architecture coaching.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Mission & Vision Highlights -->
+          <div class="about-highlights fade-in-up" style="animation-delay: 0.2s;">
+            <div class="highlight-box">
+              <h4><i class="fa-solid fa-bullseye" style="color: var(--accent-cyan);"></i> Our Mission</h4>
+              <p>To cultivate an inclusive, energetic ecosystem where every student receives the guidance, resources, and collaborative platform to transform theoretical knowledge into functional software solutions.</p>
+            </div>
+
+            <div class="highlight-box" style="border-left-color: var(--accent-emerald);">
+              <h4><i class="fa-solid fa-eye" style="color: var(--accent-emerald);"></i> Our Vision</h4>
+              <p>To establish CPI as a premier technological hub in Bangladesh by producing skilled software engineers, innovative entrepreneurs, and ethical technologists who lead global digital transformation.</p>
+            </div>
+
+            <div class="highlight-box" style="border-left-color: var(--accent-amber);">
+              <h4><i class="fa-solid fa-star" style="color: var(--accent-amber);"></i> Club Achievements & Legacy</h4>
+              <p>Winner of 3 National Polytechnic Hackathons, 12+ student startup incubations, 600+ alumni working in top IT firms, and over 1,800 active community learners.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. LEARNING RESOURCES SECTION
+         ========================================================================== -->
+    <section class="section section-alt" id="resources">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Curated Learning Hub</span>
+          <h2 class="section-title">Explore High-Quality <span class="gradient-text">Tech Resources</span></h2>
+          <p class="section-description">
+            Search and filter handpicked tutorials, documentation, video series, and interactive guides across 12+ computer science disciplines.
+          </p>
+        </div>
+
+        <!-- Filter & Search Controls -->
+        <div class="filter-wrapper fade-in-up">
+          <div class="filter-search-row">
+            <div class="search-input-group">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="resource-search-input" class="search-input" placeholder="Search HTML, Python, React, Database, Git..." autocomplete="off">
+            </div>
+
+            <div class="flex gap-2 items-center">
+              <label for="resource-difficulty-select" style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Difficulty:</label>
+              <select id="resource-difficulty-select" class="form-control" style="width: auto; padding: 0.5rem 1rem; border-radius: var(--radius-full); font-size: 0.85rem;">
+                <option value="all">All Levels</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Category Pills -->
+          <div class="filter-pills" id="resource-category-pills">
+            <!-- Dynamically Rendered Category Pills -->
+          </div>
+        </div>
+
+        <!-- Resources Grid -->
+        <div class="grid grid-cols-3" id="resources-grid-container">
+          <!-- Dynamically populated from JS -->
+        </div>
+
+        <!-- No Results Fallback -->
+        <div id="resources-empty-state" class="glass-card" style="display: none; text-align: center; padding: 3rem; margin-top: 2rem;">
+          <i class="fa-solid fa-box-open" style="font-size: 3rem; color: var(--text-muted); margin-bottom: 1rem;"></i>
+          <h3>No matching resources found</h3>
+          <p style="color: var(--text-secondary); margin-top: 0.5rem;">Try adjusting your search keywords or switching category filters.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. COURSES & BOOTCAMPS SECTION
+         ========================================================================== -->
+    <section class="section" id="courses">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Structured Learning</span>
+          <h2 class="section-title">Master In-Demand Skills with <span class="gradient-text">Guided Courses</span></h2>
+          <p class="section-description">
+            Comprehensive student-focused curriculums designed by senior engineers and faculty advisors.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-3" id="courses-grid-container">
+          <!-- Dynamically populated from JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. NOTES & STUDY MATERIALS LIBRARY
+         ========================================================================== -->
+    <section class="section section-alt" id="notes">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag"><i class="fa-solid fa-file-pdf"></i> Academic Repository</span>
+          <h2 class="section-title">Study Notes & <span class="gradient-text">Exam Preparation</span></h2>
+          <p class="section-description">
+            Download handwritten lecture notes, past exam solutions, lab manuals, and revision cheat sheets for all semesters.
+          </p>
+        </div>
+
+        <div class="filter-wrapper fade-in-up">
+          <div class="filter-search-row">
+            <div class="search-input-group">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="notes-search-input" class="search-input" placeholder="Search semester notes, DBMS, Networks, DSA..." autocomplete="off">
+            </div>
+
+            <div class="filter-pills" id="notes-category-pills">
+              <button class="filter-pill active" data-category="all"><i class="fa-solid fa-layer-group"></i> All Subjects</button>
+              <button class="filter-pill" data-category="programming"><i class="fa-solid fa-code"></i> Programming</button>
+              <button class="filter-pill" data-category="networking"><i class="fa-solid fa-network-wired"></i> Networking</button>
+              <button class="filter-pill" data-category="database"><i class="fa-solid fa-database"></i> Database</button>
+              <button class="filter-pill" data-category="fundamentals"><i class="fa-solid fa-microchip"></i> Fundamentals</button>
+              <button class="filter-pill" data-category="webdev"><i class="fa-solid fa-globe"></i> Web Dev</button>
+              <button class="filter-pill" data-category="software"><i class="fa-solid fa-diagram-project"></i> Software Eng</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2" id="notes-grid-container">
+          <!-- Dynamically populated from JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. CODING & PROGRAMMING RESOURCES
+         ========================================================================== -->
+    <section class="section" id="coding">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag"><i class="fa-solid fa-laptop-code"></i> Developer Arena</span>
+          <h2 class="section-title">Coding Challenges & <span class="gradient-text">Developer Toolkit</span></h2>
+          <p class="section-description">
+            Sharpen algorithmic problem-solving skills, explore beginner project blueprints, and leverage essential cheatsheets.
+          </p>
+        </div>
+
+        <!-- Featured Problem Solving Challenges -->
+        <h3 style="margin-bottom: 1.5rem; font-size: 1.35rem; display: flex; align-items: center; gap: 0.65rem;">
+          <i class="fa-solid fa-fire" style="color: var(--accent-rose);"></i> Handpicked Algorithmic Challenges
+        </h3>
+        <div id="challenges-container" class="fade-in-up">
+          <!-- Populated from JS -->
+        </div>
+
+        <!-- Beginner Project Blueprints -->
+        <h3 style="margin: 3.5rem 0 1.5rem 0; font-size: 1.35rem; display: flex; align-items: center; gap: 0.65rem;">
+          <i class="fa-solid fa-lightbulb" style="color: var(--accent-amber);"></i> Beginner Project Blueprints
+        </h3>
+        <div class="grid grid-cols-2" id="beginner-projects-container">
+          <!-- Populated from JS -->
+        </div>
+
+        <!-- Developer Cheat Sheets Grid -->
+        <h3 style="margin: 3.5rem 0 1.5rem 0; font-size: 1.35rem; display: flex; align-items: center; gap: 0.65rem;">
+          <i class="fa-solid fa-bolt" style="color: var(--accent-cyan);"></i> Quick Developer Cheat Sheets
+        </h3>
+        <div class="cheatsheet-grid" id="cheatsheets-container">
+          <!-- Populated from JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. EVENTS & ANNOUNCEMENTS SECTION
+         ========================================================================== -->
+    <section class="section section-alt" id="events">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag"><i class="fa-solid fa-calendar-days"></i> What's Happening</span>
+          <h2 class="section-title">Upcoming Events & <span class="gradient-text">Hackathons</span></h2>
+          <p class="section-description">
+            Participate in hands-on workshops, tech summits, competitive programming leagues, and general assemblies.
+          </p>
+        </div>
+
+        <div class="filter-wrapper fade-in-up" style="align-items: center;">
+          <div class="filter-pills" id="events-filter-pills">
+            <button class="filter-pill active" data-category="all"><i class="fa-solid fa-layer-group"></i> All Events</button>
+            <button class="filter-pill" data-category="hackathons"><i class="fa-solid fa-trophy"></i> Hackathons</button>
+            <button class="filter-pill" data-category="workshops"><i class="fa-solid fa-chalkboard-user"></i> Workshops</button>
+            <button class="filter-pill" data-category="seminars"><i class="fa-solid fa-microphone-lines"></i> Seminars</button>
+            <button class="filter-pill" data-category="contests"><i class="fa-solid fa-code"></i> Contests</button>
+            <button class="filter-pill" data-category="meetings"><i class="fa-solid fa-users"></i> Assemblies</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3" id="events-grid-container">
+          <!-- Dynamically populated from JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. CAREER & INTERNSHIP OPPORTUNITIES
+         ========================================================================== -->
+    <section class="section" id="career">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Launch Your Career</span>
+          <h2 class="section-title">Internships & <span class="gradient-text">Tech Opportunities</span></h2>
+          <p class="section-description">
+            Curated internship placements, junior developer jobs, freelance projects, and tech scholarships for polytechnic students.
+          </p>
+        </div>
+
+        <div class="filter-wrapper fade-in-up">
+          <div class="filter-pills" id="career-filter-pills" style="justify-content: center;">
+            <button class="filter-pill active" data-category="all"><i class="fa-solid fa-layer-group"></i> All Opportunities</button>
+            <button class="filter-pill" data-category="internship"><i class="fa-solid fa-user-graduate"></i> Internships</button>
+            <button class="filter-pill" data-category="job"><i class="fa-solid fa-laptop-file"></i> Full-time Jobs</button>
+            <button class="filter-pill" data-category="freelance"><i class="fa-solid fa-earth-americas"></i> Freelance</button>
+            <button class="filter-pill" data-category="scholarship"><i class="fa-solid fa-award"></i> Scholarships</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3" id="careers-grid-container">
+          <!-- Populated from JS -->
+        </div>
+
+        <!-- Career Guidance & Tips -->
+        <div class="grid grid-cols-2" style="margin-top: 3rem;">
+          <div class="glass-card fade-in-up">
+            <h3 style="margin-bottom: 1rem; color: var(--accent-cyan); display: flex; align-items: center; gap: 0.6rem;">
+              <i class="fa-solid fa-file-lines"></i> Resume / CV Master Checklist
+            </h3>
+            <ul style="padding-left: 1.25rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.9rem;" id="resume-tips-list">
+              <!-- Populated from JS -->
+            </ul>
+          </div>
+
+          <div class="glass-card fade-in-up" style="animation-delay: 0.15s;">
+            <h3 style="margin-bottom: 1rem; color: var(--accent-emerald); display: flex; align-items: center; gap: 0.6rem;">
+              <i class="fa-solid fa-comments"></i> Technical Interview Playbook
+            </h3>
+            <ul style="padding-left: 1.25rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 0.65rem; font-size: 0.9rem;" id="interview-tips-list">
+              <!-- Populated from JS -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. INTERACTIVE LEARNING ROADMAPS
+         ========================================================================== -->
+    <section class="section section-alt" id="roadmaps">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag"><i class="fa-solid fa-map-location-dot"></i> Step-by-Step Paths</span>
+          <h2 class="section-title">Interactive <span class="gradient-text">Learning Roadmaps</span></h2>
+          <p class="section-description">
+            Follow clear, structured engineering tracks with interactive milestone checkboxes that save your progress locally.
+          </p>
+        </div>
+
+        <!-- Roadmap Track Tabs -->
+        <div class="roadmap-tabs-container fade-in-up" id="roadmap-tabs-container">
+          <!-- Populated from JS -->
+        </div>
+
+        <!-- Roadmap Active Tree Container -->
+        <div class="roadmap-display-wrapper fade-in-up" id="roadmap-display-wrapper">
+          <!-- Populated from JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         11. PROJECTS SHOWCASE
+         ========================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag"><i class="fa-solid fa-rocket"></i> Student Innovations</span>
+          <h2 class="section-title">Club Projects <span class="gradient-text">Showcase</span></h2>
+          <p class="section-description">
+            Explore innovative software applications, AI bots, IoT micro-stations, and web portals engineered by club members.
+          </p>
+        </div>
+
+        <div class="filter-wrapper fade-in-up">
+          <div class="filter-search-row">
+            <div class="filter-pills" id="projects-filter-pills">
+              <button class="filter-pill active" data-category="all"><i class="fa-solid fa-layer-group"></i> All Projects</button>
+              <button class="filter-pill" data-category="web"><i class="fa-solid fa-globe"></i> Web Apps</button>
+              <button class="filter-pill" data-category="ai"><i class="fa-solid fa-brain"></i> AI & Python</button>
+              <button class="filter-pill" data-category="iot"><i class="fa-solid fa-microchip"></i> IoT & Hardware</button>
+              <button class="filter-pill" data-category="mobile"><i class="fa-solid fa-mobile-screen"></i> Mobile & PWAs</button>
+            </div>
+
+            <button class="btn btn-outline btn-sm" id="submit-project-trigger">
+              <i class="fa-solid fa-plus"></i> Submit Your Project
+            </button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3" id="projects-grid-container">
+          <!-- Dynamically populated from JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         12. CLUB LEADERSHIP & TEAM
+         ========================================================================== -->
+    <section class="section section-alt" id="team">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag"><i class="fa-solid fa-users-viewfinder"></i> The People Behind CPI ICT Club</span>
+          <h2 class="section-title">Executive Committee & <span class="gradient-text">Lead Mentors</span></h2>
+          <p class="section-description">
+            Meet the passionate educators and student leaders managing club programs, technical tracks, and community initiatives.
+          </p>
+        </div>
+
+        <div class="filter-wrapper fade-in-up" style="align-items: center;">
+          <div class="filter-pills" id="team-filter-pills">
+            <button class="filter-pill active" data-category="all"><i class="fa-solid fa-layer-group"></i> All Members</button>
+            <button class="filter-pill" data-category="executive"><i class="fa-solid fa-star"></i> Executive Leads</button>
+            <button class="filter-pill" data-category="technical"><i class="fa-solid fa-code"></i> Technical Wing</button>
+            <button class="filter-pill" data-category="design"><i class="fa-solid fa-pen-nib"></i> Design Guild</button>
+            <button class="filter-pill" data-category="content"><i class="fa-solid fa-pen-fancy"></i> Content & Media</button>
+            <button class="filter-pill" data-category="volunteer"><i class="fa-solid fa-hand-holding-heart"></i> Volunteers</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-4" id="team-grid-container">
+          <!-- Populated from JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         13. IMAGE GALLERY & LIGHTBOX
+         ========================================================================== -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag"><i class="fa-solid fa-images"></i> Memories & Moments</span>
+          <h2 class="section-title">Club Activity <span class="gradient-text">Gallery</span></h2>
+          <p class="section-description">
+            Glimpses into our hackathons, interactive workshops, guest seminars, and student celebration ceremonies.
+          </p>
+        </div>
+
+        <div class="filter-wrapper fade-in-up" style="align-items: center;">
+          <div class="filter-pills" id="gallery-filter-pills">
+            <button class="filter-pill active" data-category="all"><i class="fa-solid fa-layer-group"></i> All Photos</button>
+            <button class="filter-pill" data-category="hackathons"><i class="fa-solid fa-trophy"></i> Hackathons</button>
+            <button class="filter-pill" data-category="workshops"><i class="fa-solid fa-chalkboard-user"></i> Workshops</button>
+            <button class="filter-pill" data-category="seminars"><i class="fa-solid fa-microphone"></i> Seminars</button>
+            <button class="filter-pill" data-category="competitions"><i class="fa-solid fa-medal"></i> Competitions</button>
+          </div>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid-container">
+          <!-- Populated from JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         14. FREQUENTLY ASKED QUESTIONS (FAQ)
+         ========================================================================== -->
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag"><i class="fa-solid fa-circle-question"></i> Help & Clarity</span>
+          <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+          <p class="section-description">
+            Everything you need to know about joining CPI ICT Club, accessing materials, and participating in hackathons.
+          </p>
+        </div>
+
+        <div class="faq-container fade-in-up" id="faq-container">
+          <!-- Populated from JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         15. COMMUNITY CTA SECTION
+         ========================================================================== -->
+    <section class="section" id="community">
+      <div class="container">
+        <div class="community-cta-banner fade-in-up">
+          <span class="badge badge-cyan" style="margin-bottom: 1.25rem;">
+            <i class="fa-solid fa-comments"></i> Collaborative Student Network
+          </span>
+          <h2 style="font-size: clamp(2rem, 3.5vw, 2.75rem); font-weight: 800; margin-bottom: 1rem;">
+            Join Over <span class="gradient-text">1,850+ Passionate Coders</span>
+          </h2>
+          <p style="color: var(--text-secondary); max-width: 650px; margin: 0 auto; font-size: 1.05rem;">
+            Get instant debugging help, collaborate on capstone projects, form hackathon squads, and connect with experienced alumni.
+          </p>
+
+          <div class="community-pillars-grid">
+            <div class="community-pillar-card">
+              <i class="fa-solid fa-code-merge"></i>
+              <strong>Project Collaboration</strong>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">Build team apps</span>
+            </div>
+
+            <div class="community-pillar-card">
+              <i class="fa-solid fa-bug"></i>
+              <strong>24/7 Coding Help</strong>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">Quick debugging support</span>
+            </div>
+
+            <div class="community-pillar-card">
+              <i class="fa-solid fa-user-group"></i>
+              <strong>Study Circles</strong>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">Semester exam revision</span>
+            </div>
+
+            <div class="community-pillar-card">
+              <i class="fa-solid fa-bullhorn"></i>
+              <strong>Instant Notices</strong>
+              <span style="font-size: 0.8rem; color: var(--text-muted);">Never miss a workshop</span>
+            </div>
+          </div>
+
+          <div class="flex justify-center gap-3" style="flex-wrap: wrap;">
+            <button class="btn btn-primary btn-lg" id="join-discord-cta-btn">
+              <i class="fa-brands fa-discord"></i> Join Discord Server
+            </button>
+            <button class="btn btn-secondary btn-lg" id="join-telegram-cta-btn">
+              <i class="fa-brands fa-telegram"></i> Join Telegram Channel
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         16. CONTACT SECTION
+         ========================================================================== -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-header fade-in-up">
+          <span class="section-tag"><i class="fa-solid fa-envelope"></i> Get in Touch</span>
+          <h2 class="section-title">Connect with <span class="gradient-text">CPI ICT Club</span></h2>
+          <p class="section-description">
+            Have questions, workshop inquiries, partnership proposals, or want to invite us for an event? Send us a message!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Contact Info -->
+          <div class="contact-info-card fade-in-up">
+            <div class="contact-channel">
+              <div class="channel-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong style="display: block; margin-bottom: 0.25rem;">Club Headquarters</strong>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                  CPI ICT Club Room #204, Computer Technology Building, CPI Campus, Bangladesh
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-channel">
+              <div class="channel-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+              <div>
+                <strong style="display: block; margin-bottom: 0.25rem;">Official Email</strong>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                  <a href="mailto:ictclub@cpi.edu.bd" style="color: var(--accent-cyan);">ictclub@cpi.edu.bd</a> / <a href="mailto:support@cpi-ict.org" style="color: var(--accent-cyan);">support@cpi-ict.org</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-channel">
+              <div class="channel-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <strong style="display: block; margin-bottom: 0.25rem;">Open Lab Hours</strong>
+                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                  Sunday - Thursday: 09:00 AM - 05:00 PM (Active mentorship daily after classes)
+                </p>
+              </div>
+            </div>
+
+            <!-- Campus Map Placeholder Card -->
+            <div class="glass-card" style="padding: 1.5rem; text-align: center; background: var(--bg-tertiary);">
+              <i class="fa-solid fa-map-location-dot" style="font-size: 2.5rem; color: var(--accent-cyan); margin-bottom: 0.75rem;"></i>
+              <h4 style="margin-bottom: 0.35rem;">Campus Location Navigator</h4>
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+                Located on the 2nd floor of Computer Science Building, Room 204.
+              </p>
+              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Open in Google Maps
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Contact Form -->
+          <div class="glass-card fade-in-up" style="animation-delay: 0.15s;">
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem;">
+              <i class="fa-solid fa-paper-plane" style="color: var(--accent-cyan);"></i> Send a Direct Message
+            </h3>
+
+            <form id="contact-form" novalidate>
+              <div class="grid grid-cols-2" style="gap: 1rem;">
+                <div class="form-group">
+                  <label class="form-label" for="contact-name">Full Name *</label>
+                  <input type="text" id="contact-name" class="form-control" placeholder="e.g. Rafidul Islam" required>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-email">Email Address *</label>
+                  <input type="email" id="contact-email" class="form-control" placeholder="e.g. rafid@example.com" required>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2" style="gap: 1rem;">
+                <div class="form-group">
+                  <label class="form-label" for="contact-department">Department / Semester</label>
+                  <input type="text" id="contact-department" class="form-control" placeholder="e.g. Computer 5th Sem">
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-subject">Subject *</label>
+                  <select id="contact-subject" class="form-control" required>
+                    <option value="">Select Topic</option>
+                    <option value="General Inquiry">General Club Inquiry</option>
+                    <option value="Workshop Registration">Workshop Registration Query</option>
+                    <option value="Project Mentorship">Project Mentorship Request</option>
+                    <option value="Join Technical Team">Join Technical / Executive Wing</option>
+                    <option value="Sponsorship & Partnership">Sponsorship & Partnership</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-message">Your Message *</label>
+                <textarea id="contact-message" class="form-control" placeholder="Write your question or request in detail..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;" id="contact-submit-btn">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Tagline -->
+        <div>
+          <a href="#home" class="brand-logo" style="margin-bottom: 1rem;">
+            <div class="logo-icon-wrapper">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div class="brand-text">
+              <span class="brand-title">CPI ICT CLUB</span>
+              <span class="brand-sub">Learn • Build • Connect • Grow</span>
+            </div>
+          </a>
+          <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6; margin-bottom: 1.25rem;">
+            The premier technology community of CPI, engineering tomorrow's software developers, designers, cyber defenders, and tech leaders.
+          </p>
+          <div class="flex gap-2">
+            <a href="#" class="team-social-link" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="team-social-link" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="team-social-link" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="team-social-link" title="YouTube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="team-social-link" title="Discord" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About ICT Club</a></li>
+            <li><a href="#resources">Learning Resources</a></li>
+            <li><a href="#courses">Courses & Bootcamps</a></li>
+            <li><a href="#events">Upcoming Events</a></li>
+            <li><a href="#team">Leadership Team</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Learning Tracks -->
+        <div>
+          <h4 class="footer-col-title">Learning Hub</h4>
+          <ul class="footer-links">
+            <li><a href="#roadmaps">Frontend Roadmap</a></li>
+            <li><a href="#roadmaps">Backend Roadmap</a></li>
+            <li><a href="#roadmaps">Python & AI Path</a></li>
+            <li><a href="#roadmaps">UI/UX Design Path</a></li>
+            <li><a href="#notes">Exam Study Notes</a></li>
+            <li><a href="#coding">Coding Challenges</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Career & Opportunities -->
+        <div>
+          <h4 class="footer-col-title">Career & Growth</h4>
+          <ul class="footer-links">
+            <li><a href="#career">Internship Openings</a></li>
+            <li><a href="#career">Junior Tech Jobs</a></li>
+            <li><a href="#career">Scholarships 2025</a></li>
+            <li><a href="#projects">Project Showcase</a></li>
+            <li><a href="#faq">Club FAQs</a></li>
+            <li><a href="#contact">Contact & Location</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Newsletter Subscription -->
+        <div>
+          <h4 class="footer-col-title">Stay Updated</h4>
+          <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Subscribe to our weekly tech briefing for hackathon alerts, resource drops, and workshop dates.
+          </p>
+          <form id="newsletter-form">
+            <div style="display: flex; gap: 0.5rem;">
+              <input type="email" id="newsletter-email" class="form-control" placeholder="Your email address" required style="font-size: 0.85rem; padding: 0.6rem 0.9rem;">
+              <button type="submit" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </form>
+          <div style="margin-top: 1rem; font-size: 0.75rem; color: var(--text-muted);">
+            <i class="fa-solid fa-lock"></i> Zero spam. Unsubscribe anytime.
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year">2025</span> <strong>CPI ICT Club</strong>. Built with <i class="fa-solid fa-heart" style="color: var(--accent-rose);"></i> for learners & builders.
+        </div>
+        <div class="flex gap-4">
+          <a href="#faq">Privacy Policy</a>
+          <a href="#faq">Terms of Community</a>
+          <a href="#contact">Support Desk</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FLOATING BACK TO TOP BUTTON
+       ========================================================================== -->
+  <button class="back-to-top" id="back-to-top" title="Back to Top" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ==========================================================================
+       GLOBAL MODAL: SEARCH (Ctrl + K)
+       ========================================================================== -->
+  <div class="modal-overlay" id="search-modal">
+    <div class="modal-card search-modal-card">
+      <div class="search-modal-header">
+        <i class="fa-solid fa-magnifying-glass" style="color: var(--accent-cyan); font-size: 1.25rem;"></i>
+        <input type="text" id="global-search-input" class="search-modal-input" placeholder="Search resources, courses, notes, events, roadmaps..." autocomplete="off">
+        <button class="modal-close-btn" id="close-search-modal" aria-label="Close Search"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="search-modal-results" id="global-search-results">
+        <p style="color: var(--text-muted); font-size: 0.9rem; text-align: center; padding: 2rem;">
+          Type anything to search across all resources, courses, events, and roadmaps...
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       BOOKMARKS DRAWER
+       ========================================================================== -->
+  <div class="bookmarks-drawer" id="bookmarks-drawer">
+    <div class="drawer-header">
+      <h3 style="font-size: 1.25rem; font-weight: 700; display: flex; align-items: center; gap: 0.6rem;">
+        <i class="fa-solid fa-bookmark" style="color: var(--accent-cyan);"></i> Saved Resources
+      </h3>
+      <button class="modal-close-btn" id="close-bookmarks-drawer" aria-label="Close Bookmarks"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="bookmarks-list" id="bookmarks-list">
+      <!-- Populated from JS LocalStorage -->
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       DYNAMIC EVENT & REGISTRATION MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="event-modal">
+    <div class="modal-card" style="max-width: 720px;">
+      <button class="modal-close-btn" id="close-event-modal" aria-label="Close Event Modal"><i class="fa-solid fa-xmark"></i></button>
+      <div id="event-modal-content">
+        <!-- Populated from JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       COURSE SYLLABUS MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="course-modal">
+    <div class="modal-card" style="max-width: 700px;">
+      <button class="modal-close-btn" id="close-course-modal" aria-label="Close Course Modal"><i class="fa-solid fa-xmark"></i></button>
+      <div id="course-modal-content">
+        <!-- Populated from JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       PROJECT SUBMISSION MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="project-submit-modal">
+    <div class="modal-card" style="max-width: 650px;">
+      <button class="modal-close-btn" id="close-project-submit-modal" aria-label="Close Submit Project Modal"><i class="fa-solid fa-xmark"></i></button>
+      <h3 style="font-size: 1.35rem; font-weight: 800; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.6rem;">
+        <i class="fa-solid fa-rocket" style="color: var(--accent-cyan);"></i> Showcase Your Project
+      </h3>
+      <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+        Submit your student project to be reviewed and featured on the CPI ICT Club Wall of Innovation!
+      </p>
+
+      <form id="project-submission-form">
+        <div class="form-group">
+          <label class="form-label" for="sub-project-title">Project Name *</label>
+          <input type="text" id="sub-project-title" class="form-control" placeholder="e.g. Smart Campus Navigation" required>
+        </div>
+
+        <div class="grid grid-cols-2" style="gap: 1rem;">
+          <div class="form-group">
+            <label class="form-label" for="sub-project-author">Author / Team Name *</label>
+            <input type="text" id="sub-project-author" class="form-control" placeholder="e.g. Rafidul & Team" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="sub-project-category">Category *</label>
+            <select id="sub-project-category" class="form-control" required>
+              <option value="web">Web Application</option>
+              <option value="ai">AI & Python</option>
+              <option value="iot">IoT & Embedded</option>
+              <option value="mobile">Mobile / PWA</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2" style="gap: 1rem;">
+          <div class="form-group">
+            <label class="form-label" for="sub-project-github">GitHub Repository URL *</label>
+            <input type="url" id="sub-project-github" class="form-control" placeholder="https://github.com/..." required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="sub-project-demo">Live Demo URL</label>
+            <input type="url" id="sub-project-demo" class="form-control" placeholder="https://my-app.demo.app">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="sub-project-tech">Tech Stack (comma separated) *</label>
+          <input type="text" id="sub-project-tech" class="form-control" placeholder="e.g. HTML5, CSS3, JavaScript, Python" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="sub-project-desc">Short Overview *</label>
+          <textarea id="sub-project-desc" class="form-control" style="min-height: 90px;" placeholder="Briefly describe what your project does..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          <i class="fa-solid fa-paper-plane"></i> Submit for Review
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       JOIN COMMUNITY MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="community-modal">
+    <div class="modal-card" style="max-width: 580px; text-align: center;">
+      <button class="modal-close-btn" id="close-community-modal" aria-label="Close Community Modal"><i class="fa-solid fa-xmark"></i></button>
+      <div style="width: 60px; height: 60px; border-radius: 50%; background: var(--gradient-primary); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; margin: 0 auto 1.25rem auto;">
+        <i class="fa-solid fa-users"></i>
+      </div>
+      <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem;">Join CPI ICT Club Network</h3>
+      <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 2rem;">
+        Select your preferred communication platform to join active study groups, problem-solving channels, and announcements.
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 1rem;">
+        <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="justify-content: flex-start; padding: 1rem 1.5rem;">
+          <i class="fa-brands fa-discord" style="color: #5865F2; font-size: 1.5rem;"></i>
+          <div style="text-align: left; margin-left: 0.75rem;">
+            <strong style="display: block;">Discord Community</strong>
+            <span style="font-size: 0.78rem; color: var(--text-muted);">Real-time voice coding, screen sharing & debug help</span>
+          </div>
+        </a>
+
+        <a href="https://telegram.org" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="justify-content: flex-start; padding: 1rem 1.5rem;">
+          <i class="fa-brands fa-telegram" style="color: #229ED9; font-size: 1.5rem;"></i>
+          <div style="text-align: left; margin-left: 0.75rem;">
+            <strong style="display: block;">Telegram Announcement Channel</strong>
+            <span style="font-size: 0.78rem; color: var(--text-muted);">Instant workshop alerts, exam notes & news</span>
+          </div>
+        </a>
+
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="justify-content: flex-start; padding: 1rem 1.5rem;">
+          <i class="fa-brands fa-github" style="color: var(--text-primary); font-size: 1.5rem;"></i>
+          <div style="text-align: left; margin-left: 0.75rem;">
+            <strong style="display: block;">GitHub Student Organization</strong>
+            <span style="font-size: 0.78rem; color: var(--text-muted);">Contribute to open source student repositories</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       IMAGE LIGHTBOX
+       ========================================================================== -->
+  <div class="lightbox-modal" id="lightbox-modal">
+    <button class="modal-close-btn" id="close-lightbox" style="top: 2rem; right: 2rem; z-index: 3100;" aria-label="Close Lightbox">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous Image">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next Image">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </div>
+
+  <!-- ==========================================================================
+       TOAST NOTIFICATION CONTAINER
+       ========================================================================== -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
